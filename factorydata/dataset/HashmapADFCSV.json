@@ -1,0 +1,84 @@
+{
+	"name": "HashmapADFCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "hashmapADFBlobLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "short-202005-citibike-tripdata.csv",
+				"container": "hashmapadfcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "tripduration",
+				"type": "String"
+			},
+			{
+				"name": "starttime",
+				"type": "String"
+			},
+			{
+				"name": "stoptime",
+				"type": "String"
+			},
+			{
+				"name": "start station id",
+				"type": "String"
+			},
+			{
+				"name": "start station name",
+				"type": "String"
+			},
+			{
+				"name": "start station latitude",
+				"type": "String"
+			},
+			{
+				"name": "start station longitude",
+				"type": "String"
+			},
+			{
+				"name": "end station id",
+				"type": "String"
+			},
+			{
+				"name": "end station name",
+				"type": "String"
+			},
+			{
+				"name": "end station latitude",
+				"type": "String"
+			},
+			{
+				"name": "end station longitude",
+				"type": "String"
+			},
+			{
+				"name": "bikeid",
+				"type": "String"
+			},
+			{
+				"name": "usertype",
+				"type": "String"
+			},
+			{
+				"name": "birth year",
+				"type": "String"
+			},
+			{
+				"name": "gender",
+				"type": "String"
+			}
+		]
+	}
+}
