@@ -30,7 +30,7 @@
 						"importSettings": {
 							"type": "SnowflakeImportCopyCommand",
 							"additionalCopyOptions": {
-								"FORCE": "TRUE"
+								"FORCE": "FALSE"
 							}
 						}
 					},
