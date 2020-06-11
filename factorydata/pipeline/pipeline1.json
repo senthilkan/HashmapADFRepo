@@ -75,7 +75,10 @@
 					"sink": {
 						"type": "SnowflakeSink",
 						"importSettings": {
-							"type": "SnowflakeImportCopyCommand"
+							"type": "SnowflakeImportCopyCommand",
+							"additionalCopyOptions": {
+								"FORCE": "FALSE"
+							}
 						}
 					},
 					"enableStaging": false
