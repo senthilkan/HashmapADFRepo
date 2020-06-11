@@ -17,6 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SnowflakeSource",
+						"query": "select * from CITY_BIKE_DATA",
 						"exportSettings": {
 							"type": "SnowflakeExportCopyCommand"
 						}
