@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "*",
+				"fileName": "long-202005-citibike-tripdata.csv",
+				"folderPath": "test",
 				"container": "hashmapadfcontainer"
 			},
 			"columnDelimiter": ",",
