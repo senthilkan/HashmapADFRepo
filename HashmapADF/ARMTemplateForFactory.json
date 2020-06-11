@@ -58,7 +58,7 @@
 								"importSettings": {
 									"type": "SnowflakeImportCopyCommand",
 									"additionalCopyOptions": {
-										"FORCE": "TRUE"
+										"FORCE": "FALSE"
 									}
 								}
 							},
@@ -105,7 +105,10 @@
 							"sink": {
 								"type": "SnowflakeSink",
 								"importSettings": {
-									"type": "SnowflakeImportCopyCommand"
+									"type": "SnowflakeImportCopyCommand",
+									"additionalCopyOptions": {
+										"FORCE": "FALSE"
+									}
 								}
 							},
 							"enableStaging": false
