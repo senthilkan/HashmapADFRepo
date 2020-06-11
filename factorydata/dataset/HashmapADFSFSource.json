@@ -1,0 +1,16 @@
+{
+	"name": "HashmapADFSFSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HashmapADFSFLinkedSerice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "PUBLIC",
+			"table": "CITY_BIKE_DATA"
+		}
+	}
+}
