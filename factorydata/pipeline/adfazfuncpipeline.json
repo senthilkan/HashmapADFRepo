@@ -1,0 +1,29 @@
+{
+	"name": "adfazfuncpipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "ADFAzureFunc1",
+				"type": "AzureFunctionActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"functionName": "main",
+					"method": "POST"
+				},
+				"linkedServiceName": {
+					"referenceName": "BlobtoSFAzureFunction",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
